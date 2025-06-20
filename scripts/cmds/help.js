@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "━━━━━━━━━━━━━━━━\n『 🕸 𝖁𝖔𝖑𝖉𝖎𝖌𝖔 𝐋𝐈𝐒𝐓 🕸』"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
+const doNotDelete = "━━━━━━━━━━━━━━━━\n『 🎯 ᎠᎯᏁ ᏠᎬᏒᏕᎬᎽ 🎯 』"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
 
 module.exports = {
   config: {
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `『 🕸 𝖁𝖔𝖑𝖉𝖎𝖌𝖔 𝖆𝖓𝖔𝖘  🕸』\n`; // replace with your name 
+      msg += `『 🎯 ᎠᎯᏁ ᏠᎬᏒᏕᎬᎽ 🎯 』\n`; // replace with your name 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -60,8 +60,8 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\n➪🕸𝐋𝐞 𝐛𝐨𝐭 𝐝𝐢𝐬𝐩𝐨𝐬𝐞 𝐚𝐜𝐭𝐮𝐞𝐥𝐥𝐞𝐦𝐞𝐧𝐭 𝐝𝐞「 ${totalCommands}」𝐜𝐦𝐝𝐬\n`;
-      msg += `➪🕸 𝗧𝗔𝗣𝗘 ${prefix} 5𝐡𝐞𝐥𝐩 + 𝐥𝐞 𝐧𝐨𝐦 𝐝𝐞 𝐥𝐚 𝐜𝐦𝐝 𝐩𝐨𝐮𝐫 𝐯𝐨𝐢𝐫 𝐜𝐞𝐬 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧𝐬`;
+      msg += `\n➪🎯 𝐋𝐞 𝐛𝐨𝐭 𝐝𝐢𝐬𝐩𝐨𝐬𝐞 𝐚𝐜𝐭𝐮𝐞𝐥𝐥𝐞𝐦𝐞𝐧𝐭 𝐝𝐞「 ${totalCommands}」𝐜𝐦𝐝𝐬\n`;
+      msg += `➪🎯 𝗧𝗔𝗣𝗘 ${prefix} 5𝐡𝐞𝐥𝐩 + 𝐥𝐞 𝐧𝐨𝐦 𝐝𝐞 𝐥𝐚 𝐜𝐦𝐝 𝐩𝐨𝐮𝐫 𝐯𝐨𝐢𝐫 𝐜𝐞𝐬 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧𝐬`;
       msg += `\n✶⊶⊶⊷⊶⊷⊷❍𝖁𝖔𝖑𝖉𝖎𝖌𝖔❍⊶⊶⊷⊷⊶⊷✶❦`; // its not decoy so change it if you want 
 
       const helpListImages = [
