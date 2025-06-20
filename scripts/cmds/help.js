@@ -62,7 +62,7 @@ module.exports = {
       const totalCommands = commands.size;
       msg += `\n➪🎯 𝐋𝐞 𝐛𝐨𝐭 𝐝𝐢𝐬𝐩𝐨𝐬𝐞 𝐚𝐜𝐭𝐮𝐞𝐥𝐥𝐞𝐦𝐞𝐧𝐭 𝐝𝐞「 ${totalCommands}」𝐜𝐦𝐝𝐬\n`;
       msg += `➪🎯 𝗧𝗔𝗣𝗘 ${prefix} 5𝐡𝐞𝐥𝐩 + 𝐥𝐞 𝐧𝐨𝐦 𝐝𝐞 𝐥𝐚 𝐜𝐦𝐝 𝐩𝐨𝐮𝐫 𝐯𝐨𝐢𝐫 𝐜𝐞𝐬 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧𝐬`;
-      msg += `\n✶⊶⊶⊷⊶⊷⊷❍𝖁𝖔𝖑𝖉𝖎𝖌𝖔❍⊶⊶⊷⊷⊶⊷✶❦`; // its not decoy so change it if you want 
+      msg += `\n╾⸻⟡⟡ 『ᏦᎽᎾᎿᎯᏦᎯ』 ⟡⟡⸻╼`; // its not decoy so change it if you want 
 
       const helpListImages = [
         "https://files.catbox.moe/hddjzr.jpg", // add image link here
