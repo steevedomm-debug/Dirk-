@@ -66,7 +66,7 @@ module.exports = {
 
       const helpListImages = [
         "https://i.ibb.co/nBL42Bx/image.jpg", // add image link here
-        "https://i.ibb.co/qN5PkHc/image.jpg",
+        "https://files.catbox.moe/gdozbt.jpg",
         "https://i.ibb.co/bmMRbmh/image.jpg",
         "https://i.ibb.co/jgVFp4Y/image.jpg",
         "https://i.ibb.co/kJ6WWmW/image.jpg",
