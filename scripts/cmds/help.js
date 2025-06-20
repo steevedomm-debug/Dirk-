@@ -69,7 +69,7 @@ module.exports = {
         "https://files.catbox.moe/gdozbt.jpg",
         "https://files.catbox.moe/185h6e.jpg",
         "https://files.catbox.moe/u5fu5k.jpg",
-        "https://i.ibb.co/kJ6WWmW/image.jpg",
+        "https://files.catbox.moe/ik9pxo.jpg",
         // Add more image links as needed
       ];
 
