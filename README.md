@@ -1,51 +1,82 @@
-<img src="https://i.ibb.co/Jwtyz83V/image.jpg" alt="banner">  
-<h1 align="center"><img src="https://i.ibb.co/LzQWN8Tk/image.jpg" width="22px"> RavenBot - Bot Chat Messenger Intelligent</h1>  
----
+<p align="center">
+  <img src="https://files.catbox.moe/gdozbt.jpg" alt="banner">
+</p>
 
-## À propos
-
-RavenBot est un bot Messenger interactif puissant et polyvalent. Il intègre une intelligence conversationnelle avancée, des commandes utiles, des générateurs d'images, des systèmes d’événements automatisés et une personnalisation poussée. Conçu pour enrichir vos conversations, animer vos groupes et répondre à vos requêtes en temps réel, RavenBot est bien plus qu’un simple assistant : c’est votre compagnon numérique personnalisé.
-
----
-
-## Description
-
-- Réponse automatique aux messages et réactions
-- Commandes personnalisables (jeux, infos, utilitaires, GPT, images IA, météo, etc.)
-- Génération d’images via IA directement depuis Messenger
-- Interface d’administration via un dashboard moderne
-- Système de permissions avancé et filtres de modération
-- Support multilingue (FR/EN)
-- Notifications automatisées (bienvenue, départ, etc.)
+<h1 align="center">
+  <img src="https://files.catbox.moe/hddjzr.jpg" width="22px">
+  ᏦᎽᎾᎿᎯᏦᎯ - Bot Chat Messenger Intelligent
+</h1>
 
 ---
 
-## Requête de commande
+## 🧠 À propos
 
-[https://m.me/mariancrosss](https://m.me/mariancrosss). (cliquez pour faire une requête de commande au créateu)
+**ᏦᎽᎾᎿᎯᏦᎯ** est un bot Messenger interactif, puissant et polyvalent.  
+Il intègre une **intelligence conversationnelle avancée**, des commandes utiles, un moteur d’image IA, des événements automatisés, et une **personnalisation poussée**.
 
-📋 faites aussi vos commandes Api / Bot personnalisé.
----
-
-## Note d'usage
-
-Vous devez avoir un compte Facebook dédié au bot uniquement sur le navigateur Kiwi Browser. Assurez-vous d'accorder la permission dans les groupes où vous voulez utiliser le bot au préalable. Ensuite, allez sur ce site [C3C Utility GitHub](https://github.com/c3cbot/c3c-ufc-utility) pour télécharger l'extension C3C Utility, que vous allez installer avec Kiwi Browser en utilisant l'option "Importer fichier ZIP". Une fois l'extension importée et installée, connectez-vous à votre compte Facebook, ouvrez l'extension et vous verrez une nouvelle page. Sur cette page, sélectionnez "Import as" et choisissez "JSON" dans la liste. Un long code apparaîtra sur le tableau, vous devrez le copier en cliquant sur le bouton "Copy to clipboard 📋".
-
-Ce code copié doit être collé dans le fichier "account.dev.txt" et enregistré sur le bot. Une fois cela fait, quittez Kiwi Browser et n'y entrez plus. Continuez vos modifications dans "configs.dev.json", où vous devrez nommer le bot, ajouter un préfixe et inscrire votre UID entre guillemets dans la section "admin".
-
-Ensuite, allez sur [Render.com](https://render.com), créez un compte avec votre GitHub, liez votre compte et suivez les étapes. Dans l'interface Render, sélectionnez "Web Service" pour continuer. La nouvelle page affichera la liste de vos répertoires GitHub, sélectionnez simplement votre bot. Continuez à nommer votre bot à votre convenance, ignorez les autres détails et ne touchez à rien. Dans le champ "Root Directory", mettez "./". Naviguez ensuite en bas, sélectionnez le plan "Free", puis continuez pour déployer votre code. Une fois le déploiement terminé, attendez que le journal affiche une icône verte "Live" pour confirmer que le bot est en ligne ✅.
-
-Pour assurer une activité prolongée du bot, copiez simplement le lien dans le journal Render qui affiche le nom de votre bot suivi de ":render.com" et allez sur un site comme [BetterStack Uptime](https://betterstack.com) ou [Uptime Robot](https://uptimerobot.com). Créez un compte, puis collez le lien dans une nouvelle session.
-
-Pour toute explication approfondie, contactez : [https://m.me/mariancrosss](https://m.me/mariancrosss).  
-Toutefois, je ne garantis aucune réponse.
+🎯 Il enrichit vos conversations, anime vos groupes, et répond à vos requêtes en temps réel.  
+C’est **bien plus qu’un bot**, c’est **votre assistant numérique personnalisé**.
 
 ---
 
-## Crédit & Dédicace
+## ⚙️ Fonctionnalités
 
-RavenBot est basé sur le code open-source de GoatBot, créé par NTKhang. Merci à lui pour ce projet exceptionnel qui a permis le développement de cette version améliorée et francisée.
+- 🤖 Réponses automatiques & réactions intelligentes  
+- 🎮 Commandes personnalisées (jeux, infos, GPT, météo, etc.)  
+- 🎨 Génération d’images IA directement dans Messenger  
+- 🛠️ Dashboard d’administration moderne  
+- 🔐 Système de permissions & modération avancée  
+- 🌍 Support multilingue (FR / EN)  
+- 📢 Notifications automatisées (bienvenue, départ…)
 
-Contributeur :
-Amado Shirogane
-[https://m.me/61573686827313](https://m.me/61573686827313).
+---
+
+## 📬 Requête de commande
+
+👤 Créateur : **Dan Jersey**  
+📎 Contact : [facebook.com/Danjersey09](https://www.facebook.com/Danjersey09)  
+📋 Faites vos requêtes API ou demandez un bot personnalisé.
+
+---
+
+## 📝 Note d’utilisation
+
+🧩 Vous devez utiliser un **compte Facebook dédié au bot** sur **Kiwi Browser**.
+
+1. Autorisez le bot dans vos groupes Messenger.  
+2. Rendez-vous sur :  
+   🔗 [C3C Utility GitHub](https://github.com/c3cbot/c3c-ufc-utility)  
+3. Téléchargez l'extension `.ZIP` → importez-la dans Kiwi.  
+4. Connectez-vous à Facebook → ouvrez l’extension → **"Import as JSON"**  
+5. Copiez le long **code JSON** généré.  
+6. Collez ce code dans le fichier `account.dev.txt` du bot.  
+7. Modifiez `configs.dev.json` :
+   - Donnez un nom au bot
+   - Définissez un préfixe
+   - Ajoutez votre UID dans `"admin"`
+
+🔧 Ensuite, allez sur [Render.com](https://render.com) :  
+- Liez votre GitHub  
+- Créez un service Web  
+- Choisissez le dossier de votre bot (root: `./`)  
+- Choisissez le **plan Free**  
+- Déployez et attendez le badge **Live ✅**
+
+🕒 Pour garder le bot actif 24h/24 :  
+- Copiez le lien `.render.com`  
+- Collez-le dans [BetterStack](https://betterstack.com) ou [Uptime Robot](https://uptimerobot.com)
+
+📮 Pour de l’aide, contactez :  
+🔗 [facebook.com/Danjersey09](https://www.facebook.com/Danjersey09)  
+⚠️ Aucune réponse garantie.
+
+---
+
+## 💎 Crédits & Dédicace
+
+ᏦᎽᎾᎿᎯᏦᎯ est basé sur l’open-source **GoatBot**, développé par **NTKhang**.  
+Un grand merci à lui 🙏 pour cette base incroyable.
+
+### 👥 Contributeur :
+**Dan Jersey**  
+🔗 [facebook.com/Danjersey09](https://www.facebook.com/Danjersey09)
