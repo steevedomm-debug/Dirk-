@@ -75,7 +75,7 @@ C’est **bien plus qu’un bot**, c’est **votre assistant numérique personna
 ## 💎 Crédits & Dédicace
 
 ᏦᎽᎾᎿᎯᏦᎯ est basé sur l’open-source **GoatBot**, développé par **NTKhang**.  
-Un grand merci à lui 🙏 pour cette base incroyable.
+Un grand merci à lui 🎯 pour cette base incroyable.
 
 ### 👥 Contributeur :
 **Dan Jersey**  
