@@ -45,7 +45,7 @@ C’est **bien plus qu’un bot**, c’est **votre assistant numérique personna
 
 1. Autorisez le bot dans vos groupes Messenger.  
 2. Rendez-vous sur :  
-   🔗 [C3C Utility GitHub](https://github.com/c3cbot/c3c-ufc-utility)  
+   🔗 [C3C Utility GitHub](https://c3c-fbstate-utility.vi.softonic.com/chrome/extension)  
 3. Téléchargez l'extension `.ZIP` → importez-la dans Kiwi.  
 4. Connectez-vous à Facebook → ouvrez l’extension → **"Import as JSON"**  
 5. Copiez le long **code JSON** généré.  
