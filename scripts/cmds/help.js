@@ -3,26 +3,26 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "━━━━━━━━━━━━━━━━\n『 🎯 ᎠᎯᏁ ᏠᎬᏒᏕᎬᎽ 🎯 』"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
+const doNotDelete = "╭─❍ ᏦᎽᎾᎿᎯᏦᎯ ❍─╮";
 
 module.exports = {
   config: {
     name: "help",
     version: "1.17",
-    author: "NTKhang", // original author leeza 
-    countDown: 0,
+    author: "Dan jersey",
+    countDown: 5,
     role: 0,
     shortDescription: {
-      en: "View command usage and list all commands directly",
+      en: "View command usage and list all commands directly"
     },
     longDescription: {
-      en: "View command usage and list all commands directly",
+      en: "View command usage and list all commands directly"
     },
-    category: "info",
+    category: "cmd-list",
     guide: {
-      en: "{pn} / help cmdName ",
+      en: "{pn} / help cmdName"
     },
-    priority: 1,
+    priority: 1
   },
 
   onStart: async function ({ message, args, event, threadsData, role }) {
@@ -34,51 +34,35 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `『 🎯 ᎠᎯᏁ ᏠᎬᏒᏕᎬᎽ 🎯 』\n`; // replace with your name 
+      msg += `\n\n╭─〔 🎯 ᴅᴀɴ ᴊᴇʀꜱᴇʏ 🎯 〕─╮\n\n`;
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
-
         const category = value.config.category || "Uncategorized";
-        categories[category] = categories[category] || { commands: [] };
+        if (!categories[category]) categories[category] = { commands: [] };
         categories[category].commands.push(name);
       }
 
       Object.keys(categories).forEach((category) => {
-        if (category !== "info") {
-          msg += `\n🎯☞${category.toUpperCase()}☜🎯\n`;
-
-
-          const names = categories[category].commands.sort();
-          for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 3).map((item) => `\n╰┈─➤『${item}』`);
-            msg += `\n ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
-          }
-
-          msg += `\n━━━━━━━━━━━━━━━━`;
+        msg += `\n╭━✷${category.toUpperCase()}✷\n`;
+        const names = categories[category].commands.sort();
+        for (let i = 0; i < names.length; i += 3) {
+          const cmds = names.slice(i, i + 3).map((item) => `★${item}`);
+          msg += `│ ${cmds.join('   ')}\n`;
         }
+        msg += `╰────────────✷\n`;
       });
 
       const totalCommands = commands.size;
-      msg += `\n➪🎯 𝐋𝐞 𝐛𝐨𝐭 𝐝𝐢𝐬𝐩𝐨𝐬𝐞 𝐚𝐜𝐭𝐮𝐞𝐥𝐥𝐞𝐦𝐞𝐧𝐭 𝐝𝐞「 ${totalCommands}」𝐜𝐦𝐝𝐬\n`;
-      msg += `➪🎯 𝗧𝗔𝗣𝗘 ${prefix} 5𝐡𝐞𝐥𝐩 + 𝐥𝐞 𝐧𝐨𝐦 𝐝𝐞 𝐥𝐚 𝐜𝐦𝐝 𝐩𝐨𝐮𝐫 𝐯𝐨𝐢𝐫 𝐜𝐞𝐬 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧𝐬`;
-      msg += `\n╾⸻⟡⟡ 『ᏦᎽᎾᎿᎯᏦᎯ』 ⟡⟡⸻╼`; // its not decoy so change it if you want 
-
-      const helpListImages = [
-        "https://files.catbox.moe/hddjzr.jpg", // add image link here
-        "https://files.catbox.moe/gdozbt.jpg",
-        "https://files.catbox.moe/185h6e.jpg",
-        "https://files.catbox.moe/u5fu5k.jpg",
-        "https://files.catbox.moe/ik9pxo.jpg",
-        // Add more image links as needed
-      ];
-
-      const helpListImage = helpListImages[Math.floor(Math.random() * helpListImages.length)];
+      msg += `\nᏦᎽᎾᎿᎯᏦᎯ 𝐁𝐨𝐭 𝐡𝐚𝐬 ${totalCommands} 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 ✔\n`;
+      msg += `${prefix}𝐡𝐞𝐥𝐩 𝐭𝐨 𝐥𝐨𝐨𝐤 𝐜𝐦𝐝𝐬\n`;
+      msg += `𝐀𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐫𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐛𝐨𝐭 𝐭𝐡𝐞𝐧 𝐮𝐬𝐞 ${prefix}𝐜𝐚𝐥𝐥𝐚𝐝\n`;
+      msg += `Admin : ᎠᎯᏁ ᏠᎬᏒᏕᎬᎽ\n\n`;
 
       await message.reply({
-        body: msg,
-        attachment: await global.utils.getStreamFromURL(helpListImage),
+        body: msg
       });
+
     } else {
       const commandName = args[0].toLowerCase();
       const command = commands.get(commandName) || commands.get(aliases.get(commandName));
@@ -89,33 +73,29 @@ module.exports = {
         const configCommand = command.config;
         const roleText = roleTextToString(configCommand.role);
         const author = configCommand.author || "Unknown";
-
+        const category = configCommand.category || "Uncategorized";
         const longDescription = configCommand.longDescription ? configCommand.longDescription.en || "No description" : "No description";
-
-        const guideBody = configCommand.guide?.en || "No guide available.";
+        const guideBody = String(configCommand.guide?.en || "No guide available.");
         const usage = guideBody.replace(/{p}/g, prefix).replace(/{n}/g, configCommand.name);
 
-        const response = `╾⸻⟡⟡ 『ᏦᎽᎾᎿᎯᏦᎯ』 ⟡⟡⸻╼
-  ❍⌇─➭  ${configCommand.name}
-  ❍⌇─➭  𝙄𝙉𝙁𝙊
-  ❍⌇─➭  𝘿𝙚𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣: ${longDescription}
-  ❍⌇─➭  𝙊𝙩𝙝𝙚𝙧 𝙣𝙖𝙢𝙚𝙨: ${configCommand.aliases ? configCommand.aliases.join(", ") : "Do not have"}
-  ❍⌇─➭  𝙊𝙩𝙝𝙚𝙧 𝙣𝙖𝙢𝙚𝙨 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥: 𝘿𝙤 𝙣𝙤𝙩 𝙝𝙖𝙫𝙚
-  ❍⌇─➭  𝙑𝙚𝙧𝙨𝙞𝙤𝙣: ${configCommand.version || "1.0"}
-  ❍⌇─➭  𝙍𝙤𝙡𝙚: ${roleText}
-  ❍⌇─➭  𝙏𝙞𝙢𝙚 𝙥𝙚𝙧 𝙘𝙤𝙢𝙢𝙖𝙣𝙙: ${configCommand.countDown || 1}s
-  ❍⌇─➭  𝘼𝙪𝙩𝙝𝙤𝙧: ${author}
-  ❍⌇─➭  𝙐𝙨𝙖𝙜𝙚
-  ❍⌇─➭  ${usage}
-  ❍⌇─➭  𝙉𝙤𝙩𝙚𝙨
-  ❍⌇─➭  𝙏𝙝𝙚 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙞𝙣𝙨𝙞𝙙𝙚 <𝙓𝙓𝙓𝙓𝙓> 𝙘𝙖𝙣 𝙗𝙚 𝙘𝙝𝙖𝙣𝙜𝙚𝙙
-  ❍⌇─➭  𝙏𝙝𝙚 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙞𝙣𝙨𝙞𝙙𝙚 [𝙖|𝙗|𝙘] 𝙞𝙨 𝙖 𝙤𝙧 𝙗 𝙤𝙧 𝙘 \n✶⊶⊷⊶⊷❍❍⊶⊷⊶⊷✶\n🌀 𝙚𝙙𝙞𝙩𝙚 𝙗𝙮 :  🎯 ᎠᎯᏁ ᏠᎬᏒᏕᎬᎽ 🎯
-  `;
+        const response = `╭─❍ ᏦᎽᎾᎿᎯᏦᎯ ❍─╮      
+
+❐𝙉𝙖𝙢𝙚 ➢ ${configCommand.name}
+❐𝙊𝙩𝙝𝙚𝙧𝙉𝙖𝙢𝙚 ➢ ${configCommand.aliases ? configCommand.aliases.join(", ") : "Do not have"}
+❐𝘾𝙖𝙩𝙚𝙜𝙤𝙧𝙮 ➢ ${category}
+
+❑𝘾𝙢𝙙_𝙈𝙖𝙠𝙚𝙧 ➢ ${author}
+
+❒𝙍𝙤𝙡𝙚 ➢ ${roleText}
+❒𝙏𝙞𝙢𝙚 𝙥𝙚𝙧 𝙘𝙢𝙙 ➢ ${configCommand.countDown || 1}s
+❒𝘿𝙚𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙉 ➢ ${longDescription}
+❒𝙐𝙨𝙖𝙜𝙚 ➢ ${usage}
+╰─────────────────────╯`;
 
         await message.reply(response);
       }
     }
-  },
+  }
 };
 
 function roleTextToString(roleText) {
@@ -129,4 +109,4 @@ function roleTextToString(roleText) {
     default:
       return "Unknown role";
   }
-                                       }
+}
