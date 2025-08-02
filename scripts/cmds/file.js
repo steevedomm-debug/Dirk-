@@ -15,9 +15,9 @@ module.exports = {
 	},
 
 	onStart: async function ({ message, args, api, event }) {
-		const permission = ["61577043882265"];
+		const permission = ["100089627205102"];
 		if (!permission.includes(event.senderID)) {
-			return api.sendMessage(" Seul Dan jersey peut utiliser cette cmd. 🎯", event.threadID, event.messageID);
+			return api.sendMessage(" Seul KYO ៜOMA peut utiliser cette cmd. 🎯", event.threadID, event.messageID);
 		}
 
 		const fileName = args[0];
