@@ -3,13 +3,13 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "╭─❍ KYO ៜOMA ❍─╮";
+const doNotDelete = "╭─❍ Eυddy Dooм  ❍─╮";
 
 module.exports = {
   config: {
     name: "help",
     version: "1.17",
-    author: "Kyo Soma",
+    author: "Eυddy Dooм ",
     countDown: 5,
     role: 0,
     shortDescription: {
@@ -54,10 +54,10 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\nKYO SOMA 𝐁𝐨𝐭 𝐡𝐚𝐬 ${totalCommands} 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 ✔\n`;
+      msg += `\nEυddy Dooм  𝐁𝐨𝐭 𝐡𝐚𝐬 ${totalCommands} 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 ✔\n`;
       msg += `${prefix}𝐡𝐞𝐥𝐩 𝐭𝐨 𝐥𝐨𝐨𝐤 𝐜𝐦𝐝𝐬\n`;
       msg += `𝐀𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐫𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐛𝐨𝐭 𝐭𝐡𝐞𝐧 𝐮𝐬𝐞 ${prefix}𝐜𝐚𝐥𝐥𝐚𝐝\n`;
-      msg += `Admin : KYO ៜOMA\n\n`;
+      msg += `Admin : Eυddy Dooм \n\n`;
 
       await message.reply({
         body: msg
